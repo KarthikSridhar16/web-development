@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Krishna Oils - Our Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shri Krishna Oils</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-gallery">
+            <div class="product" onclick="openModal('Groungnutoil.jpg', 'Groundnut Oil', 'Our groundnut oil is made from the finest groundnuts, ensuring a rich taste and high nutritional value.')">
+                <img src="Groungnutoil.jpg" alt="Groundnut Oil">
+                <h3>Groundnut Oil</h3>
+                <p>Our groundnut oil is cold-pressed to retain its natural nutrients and rich, nutty flavor. Perfect for all your cooking needs, it adds a delightful taste to your dishes while offering numerous health benefits.</p>
+                <ol>
+                    <p> Cold-Pressed: Retains natural antioxidants and nutrients.</p>
+                    <p> Rich Flavor: Enhances the taste of your food.</p>
+                    <p>Health Benefits: High in unsaturated fats, promotes heart health.</p></ol>
+            </div>
+            <div class="product" onclick="openModal('coconutoil.jpg', 'Coconut Oil', 'Our coconut oil is made from the freshest coconuts, offering a pure and natural flavor.')">
+                <img src="coconutoil.jpg" alt="Coconut Oil">
+                <h3>Coconut Oil</h3>
+                <p>Extracted from the finest coconuts, our coconut oil is a versatile product ideal for cooking, baking, and even skincare. Its mild, pleasant aroma and numerous health benefits make it a staple in every household.</p>
+                <ol>
+                    <p>Cold-Pressed: Preserves the natural goodness of coconuts.</p>
+                    <p>Versatile Use: Suitable for cooking, baking, and personal care.</p>
+                    <p>Packed with medium-chain triglycerides (MCTs), supports overall health.</p></ol>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shri Krishna Oils. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
